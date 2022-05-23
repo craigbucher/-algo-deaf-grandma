@@ -1,13 +1,8 @@
 function deafGrandma(){	
   let byeCount = 0;	
-  let response;
-  const readline = require('readline')
-  const inquirer = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+  let response;	
   while (byeCount < 2){	
-    inquirer.question("What do you want to say to Grandma?", response);	
+    let response = ask('What do you want to say to Grandma!!');	
     if (response === ''){	
       console.log('WHAT?!');	
     } else if (response === 'GOODBYE!' && byeCount < 1){	
