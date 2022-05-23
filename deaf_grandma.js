@@ -2,7 +2,7 @@ function deafGrandma(){
   let byeCount = 0;	
   let response;	
   while (byeCount < 2){	
-    let response = ask('What do you want to say to Grandma!!');	
+    let response = prompt('What do you want to say to Grandma!!');	
     if (response === ''){	
       console.log('WHAT?!');	
     } else if (response === 'GOODBYE!' && byeCount < 1){	
