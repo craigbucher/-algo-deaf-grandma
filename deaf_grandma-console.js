@@ -29,8 +29,4 @@ function deafGrandma(counter = 0){
     
 }
 
-function isUpperCase(string){	
-  return (string === string.toUpperCase());	
-}
-
 deafGrandma();
