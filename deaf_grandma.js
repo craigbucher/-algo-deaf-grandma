@@ -4,16 +4,16 @@ function deafGrandma(){
   while (byeCount < 2){
     response = window.prompt('What would you like to say to Grandma?');
     if (response === ''){	
-      window.prompt('WHAT?!');
+      window.alert('WHAT?!');
     } else if (response === 'GOODBYE!' && byeCount < 1){	
-      window.prompt('LEAVING SO SOON?');	
+      window.alert('LEAVING SO SOON?');	
       byeCount ++;
     } else if (isUpperCase(response) && response !== 'GOODBYE!'){	
-      window.prompt('NO, NOT SINCE 1946!');
+      window.alert('NO, NOT SINCE 1946!');
     } else if (!isUpperCase(response)){	
-      window.prompt('SPEAK UP, KID!');
+      window.alert('SPEAK UP, KID!');
     } else if (response === 'GOODBYE!'){	
-      window.prompt('LATER, SKATER!');	
+      window.alert('LATER, SKATER!');	
       return '';
     }
   }
