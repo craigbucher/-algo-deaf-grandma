@@ -1,10 +1,15 @@
 function deafGrandma(){	
-  const readline = require('readline');
-  const rl = readline.createInterface(
-    process.stdin, process.stdout);
-  let bye = false;
-  let outputMessage = 'SPEAK UP, KID!';
+  //call helper function
+  handleNextQuestion();
+}
 
+const readline = require('readline');
+const rl = readline.createInterface(
+  process.stdin, process.stdout);
+let bye = false;
+let outputMessage = 'SPEAK UP, KID!';
+
+function handleNextQuestion(){
   readline.question('Grandma is listening...', input => {
     if (input === ''){
       outputMessage = 'WHAT?!';
@@ -22,6 +27,5 @@ function deafGrandma(){
     deafGrandma();
   });
 }
-
 
 deafGrandma();
