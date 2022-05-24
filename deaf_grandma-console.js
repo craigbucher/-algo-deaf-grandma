@@ -26,7 +26,6 @@ function deafGrandma(counter = 0){
       }
     }
   });
-    
 }
 
 deafGrandma();
